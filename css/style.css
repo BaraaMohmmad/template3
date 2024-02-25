@@ -1,0 +1,256 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+body{
+    font-family: "pt sans",sans-serif;
+}
+.contaner{
+    width: 80%;
+    margin: auto;
+}
+.list-unstyles{
+    list-style: none;
+}
+.header .header-content{
+   height: 10%;
+   display: flex;
+   justify-content: space-between;
+}
+.list-unstyles{
+    display: flex;
+}
+.list-unstyles li{
+justify-content:space-between;
+padding-right: 20px;
+padding-top: 20px;
+text-transform: capitalize;
+font-weight: bold;
+color: black;
+transition: color 0.5s;
+}
+.imggg{
+height: 50px;
+    }
+.list-unstyles .logo-co{
+        color: #50262633;
+
+    }
+.list-unstyles:hover .logo-co{
+        color: #f3000033;
+}
+.list-unstyles .list-tran i{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    transform: font-size 1s;
+
+}
+li .list-tran:hover {
+border: 3px solid #64000033 ;
+padding: 15px 15px 15px 15px ;
+font-size: large;
+
+}
+.slider img{
+    width: 100%;
+}
+
+.list-unstyles1{
+    list-style: none;
+}
+.dropdown{
+    position: relative;  
+}
+.dropdown-menu{
+    position: absolute; 
+    width: 400px;
+    background: white;
+    padding: 15px;
+    margin-top: 37px;
+    border: 3px solid #64000033;
+transform: scale(0) ;
+transition:transform 1s ,visibility 1s ;
+visibility: hidden;
+}
+.dropdown:hover .dropdown-menu{ 
+    transform: scale(1) ;
+    visibility:visible;
+}
+.dropdown-menu ul{
+display: table-cell;
+font-size: 14px;
+}
+.list-unstyles1 li a {
+    text-decoration: none;
+    color:#0c0505 ;
+
+}
+.list-unstyles1  li:first-child a{
+    border-bottom: 1px dotted #ff000033 ;
+    display: block;
+    text-decoration:#ff000033;
+    font-weight: bold ;
+    font-size:20px
+}
+.slider {
+    position: relative;
+}
+.slider1{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 0.5rem -0.75rem hsla(0,0%,0%,0.25);
+}
+.slider1 img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nev{
+display: flex;
+column-gap: 1rem;
+position: absolute;
+bottom: 1.25rem;
+left: 50%;
+transform: translate(-50%);
+z-index: 1;
+}
+.slider-nev a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nev a:hover{
+opacity: 1;
+}
+.sec-hed{
+text-align: center;}
+.section-title{
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.sec-hed .line{
+    display: block;
+    width: 150px;
+    margin: auto;
+    height: 4px;
+    background-color: #ff000033;
+    margin-bottom:40px;
+}
+.category-item-title{
+    color: #00000062;
+    text-transform: capitalize;
+}
+.category-item-text{
+    text-transform: capitalize;
+    font-size: medium;
+}
+.category-item img{
+width: 250px;
+height: 300px;
+}
+.category-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 20px;
+
+}
+.category-item{
+    position: relative;
+}
+.category-item .icon{
+    background: #ff000033;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 220;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ;
+}
+.category-item:hover .icon{
+    opacity: 1;
+    visibility: visible;
+}
+.disc{
+    position: relative;
+}
+.par-disc p{
+    color: #00000086;
+}
+.par-disc h5{
+    color: #00000086;
+}
+.ff{
+    position: absolute;
+    display: flex;
+}
+.disc{
+    position: relative;
+    padding-top: 90px;
+}
+
+.dic{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 90px;
+
+}
+
+.disc-item {
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    position: absolute;    
+    transform: translate(-0%, -0%);
+    background-color:none;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+.image-container h2 {
+    margin: 0;
+    color: #333;
+}
+.image-container h3{
+    color:  #ff000033 ;   
+}
+.disc-item img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+    border: 3px solid #000;
+    transition:width 2s ;
+}
+.disc-item:hover img{
+    width: 350px;
+}
+.disc-item2 {
+    background:#33333327 ;
+    padding: 30PX 10PX;
+    border-radius: 30px;
+    margin-left: 30px;
+    transition:width 2s ;
+
+}
+
+.disc-item2:hover{
+    width: 350px;
+
+}
